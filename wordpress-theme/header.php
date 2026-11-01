@@ -56,8 +56,8 @@
 <header class="site-header" id="top">
 	<div class="container header-inner">
 		<a class="brand" href="<?php ps_home(); ?>" aria-label="برو سيرفر — الرئيسية">
-			<img src="<?php ps_img( 'logo-h.png' ); ?>" alt="ProServer" width="170" height="40" class="brand-dark">
-			<img src="<?php ps_img( 'logo-h-light.png' ); ?>" alt="" width="170" height="40" class="brand-light" aria-hidden="true">
+			<img src="<?php ps_img( 'logo-h-light.png' ); ?>" alt="ProServer" width="170" height="40" class="brand-light">
+			<img src="<?php ps_img( 'logo-h.png' ); ?>" alt="" width="170" height="40" class="brand-dark" aria-hidden="true">
 		</a>
 
 		<nav class="main-nav" id="main-nav" aria-label="القائمة الرئيسية">

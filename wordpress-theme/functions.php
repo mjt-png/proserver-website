@@ -69,14 +69,14 @@ add_action( 'after_setup_theme', function () {
 
 add_action( 'wp_enqueue_scripts', function () {
 	$uri = get_template_directory_uri();
-	wp_enqueue_style( 'ps-fonts', 'https://fonts.googleapis.com/css2?family=Changa:wght@500;600;700;800&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap', array(), null );
+	wp_enqueue_style( 'ps-fonts', 'https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap', array(), null );
 	wp_enqueue_style( 'ps-main', $uri . '/assets/css/main.css', array( 'ps-fonts' ), PS_VERSION );
 	wp_enqueue_script( 'ps-main', $uri . '/assets/js/main.js', array(), PS_VERSION, true );
 } );
 
 add_action( 'wp_head', function () {
 	echo '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
-	echo '<meta name="theme-color" content="#f2f0ea">' . "\n";
+	echo '<meta name="theme-color" content="#16191d">' . "\n";
 	if ( ! has_site_icon() ) {
 		echo '<link rel="icon" type="image/png" href="' . esc_url( get_template_directory_uri() . '/assets/img/favicon.png' ) . '">' . "\n";
 	}
